@@ -1,11 +1,12 @@
 .Nav {
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 96px;
   left: 55px;
   top: 40px;
   display: flex;
   flex-direction: row;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .navLogo {
@@ -40,12 +41,19 @@
 .navLinks {
   display: flex;
   width: 85%;
-  color: white;
+  color: #ffffff;
   height: fit-content;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .navLinks li {
   width: fit-content;
   display: flex;
+  color: white;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
 }
