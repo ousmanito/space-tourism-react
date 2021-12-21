@@ -1,0 +1,51 @@
+.Nav {
+  position: absolute;
+  width: 100%;
+  height: 96px;
+  left: 55px;
+  top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navLogo {
+  width: fit-content;
+  height: 50%;
+  align-self: center;
+}
+
+.navLine {
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  left: 167px;
+  top: 50%;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  z-index: 2;
+}
+
+.navBar {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  position: absolute;
+  right: 0;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLinks {
+  display: flex;
+  width: 85%;
+  color: white;
+  height: fit-content;
+  justify-content: space-around;
+}
+
+.navLinks li {
+  width: fit-content;
+  display: flex;
+}
