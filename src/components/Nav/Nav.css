@@ -8,8 +8,7 @@
   flex-direction: row;
   font-family: 'Barlow Condensed', sans-serif;
 }
-
-.navLogo {
+.Nav a {
   width: fit-content;
   height: 50%;
   align-self: center;
@@ -46,8 +45,8 @@
   counter-reset: navList;
 }
 
-.navLinks li {
-  list-style: none;
+
+.navLinks li a {
   display: flex;
   align-items: center;
   width: fit-content;
@@ -59,11 +58,22 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2.7px;
+  box-sizing: border-box;
   counter-increment: navList;
+  text-decoration: none;
+
+}
+
+
+
+.navLinks li {
+  display: flex;
+  width: fit-content;
+  height: 10vh;
   box-sizing: border-box;
 }
 
-.navLinks li::before {
+.navLinks a::before {
   content:"0" counter(navList) "";
   font-weight: bold;
   padding-right: 10px;

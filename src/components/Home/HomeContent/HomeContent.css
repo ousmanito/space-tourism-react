@@ -6,14 +6,7 @@
   overflow: visible;
 }
 
-.HomePage {
-  background-image: url("./background-home-desktop.jpg");
-  background-size: cover;
-  position: absolute;
-  z-index: 0;
-}
-
-/* .HomeText {
+.HomeText {
   position: absolute;
   width: 450px;
   height: 382px;
@@ -65,16 +58,16 @@
 }
 
 .HomeButton {
-  position:absolute;
-  z-index: 10;
+  position: absolute;
+  /* z-index: 10; */
   width: 274px;
   height: 274px;
-  right: 20% ;
+  right: 20%;
   top: 495px;
 }
 
 .HomeButton p {
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -99,7 +92,7 @@
   border-radius: 50%;
   position: absolute;
   top: 0;
-  transform: translate(-15%,-15%);
+  transform: translate(-15%, -15%);
   transition: 0.3s ease;
   z-index: 9;
   opacity: 0;
@@ -108,4 +101,4 @@
 .ButtonHover:hover {
   opacity: 50%;
   transition: 1s ease-in-out;
-} */
+}
