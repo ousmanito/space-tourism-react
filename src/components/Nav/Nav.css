@@ -41,19 +41,42 @@
 .navLinks {
   display: flex;
   width: 85%;
-  color: #ffffff;
   height: fit-content;
   justify-content: space-evenly;
+  counter-reset: navList;
 }
 
 .navLinks li {
-  width: fit-content;
+  list-style: none;
   display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 10vh;
   color: white;
   text-transform: uppercase;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2.7px;
+  counter-increment: navList;
+  box-sizing: border-box;
 }
+
+.navLinks li::before {
+  content:"0" counter(navList) "";
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+
+.navLinks li:hover {
+  border-bottom: 3px solid rgba(245, 245, 245, 0.678);
+}
+.navLinks-active {
+  border-bottom: 3px solid white;
+
+}
+
+
+
