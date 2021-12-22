@@ -1,6 +1,21 @@
 import React from "react";
 import "./Home.css";
 
+const Hover = () => {
+ const outer = document.querySelector('.ButtonHover');
+ outer.style.opacity = '50%';
+ outer.style.transition='1s ease';
+
+
+}
+
+const HoverOuter = ()=>{
+  const outer = document.querySelector('.ButtonHover');
+  outer.style.opacity = '0';
+  outer.style.transition='1s ease';
+}
+
+
 const Home = () => {
   return (
     <div className="HomePage">
@@ -13,6 +28,10 @@ const Home = () => {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
+      </div>
+      <div className="HomeButton">
+        <p className="HomeP" onMouseOver={Hover}>EXPLORE</p>
+        <div className="ButtonHover" onMouseOver={HoverOuter}></div>
       </div>
     </div>
   );
