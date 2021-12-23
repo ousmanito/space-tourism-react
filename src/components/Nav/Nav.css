@@ -81,10 +81,10 @@
 
 
 .navLinks li:hover {
-  border-bottom: 3px solid rgba(245, 245, 245, 0.678);
+  border-bottom: 2px solid rgba(245, 245, 245, 0.678);
 }
 .navLinks-active {
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid white;
 
 }
 
