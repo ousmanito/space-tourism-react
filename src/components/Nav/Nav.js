@@ -2,21 +2,41 @@ import React from "react";
 import "./Nav.css";
 
 import navLogo from "./logo.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div className="Nav">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <img src={navLogo} alt="" className="navLogo"></img>
-      </Link>
+      </NavLink>
       <div className="navLine"></div>
       <div className="navBar">
         <ol className="navLinks">
-          <li><Link to={'/'}>Home</Link></li>
-          <li><Link to={'/destination'}>Destination</Link></li>
-          <li><Link to={'/crew'}>Crew</Link></li>
-          <li><Link to={'/technology'}>Technology</Link></li>
+          <li id="home">
+            <NavLink 
+            to={"/"} 
+            className={({isActive})=> (isActive ? 'navLinks-active' : "")}
+            >Home</NavLink>
+          </li>
+          <li id="destination">
+            <NavLink 
+            to={"/destination"}
+            className={({isActive})=> (isActive ? 'navLinks-active' : "")}
+            >Destination</NavLink>
+          </li>
+          <li id="crew">
+            <NavLink 
+            to={"/crew"}
+            className={({isActive})=> (isActive ? 'navLinks-active' : "")}
+            >Crew</NavLink>
+          </li>
+          <li id="technology">
+            <NavLink 
+            to={"/technology"}
+            className={({isActive})=> (isActive ? 'navLinks-active' : "")}
+            >Technology</NavLink>
+          </li>
         </ol>
       </div>
     </div>
