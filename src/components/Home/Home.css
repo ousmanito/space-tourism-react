@@ -11,22 +11,29 @@
   background-size: cover;
   position: absolute;
   z-index: 0;
+  transition: 0.5s ease;
 }
 .technologyPage {
   background-image: url('./background-technology-desktop.jpg');
   background-size: cover;
   position: absolute;
   z-index: 0;
+  transition: 0.5s ease;
+
 }
 .crewPage {
   background-image: url('./background-crew-desktop.jpg');
   background-size: cover;
   position: absolute;
   z-index: 0;
+  transition: 0.5s ease;
+
 }
 .destinationPage {
   background-image: url('./background-destination-desktop.jpg');
   background-size: cover;
   position: absolute;
   z-index: 0;
+  transition: 0.3s ease;
+
 }

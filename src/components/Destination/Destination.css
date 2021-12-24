@@ -1,0 +1,83 @@
+* {
+  text-decoration: none;
+}
+
+.destinationText {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 166.5px;
+  top: 212px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.destinationText li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+  list-style: none;
+}
+
+.destinationText li::before {
+  content: "01";
+  font-weight: bold;
+  padding-right: 10px;
+  color: grey;
+}
+
+.destinationImage {
+}
+
+.destinationLinks {
+  list-style: none;
+  position: absolute;
+  height: 50px;
+  top: 40%;
+  left: 60%;
+  bottom: 50%;
+  width: fit-content;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  display: flex;
+}
+
+
+.destinationLinks li {
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.destinationLinks a {
+  align-items: center;
+  display: flex;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+.destinationLinks a:hover {
+  border-bottom: solid 2px grey;
+}
+
+.destinationLinks-active {
+  border-bottom: solid 1px white;
+}
+
+.destinationContent {
+}

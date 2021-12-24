@@ -1,0 +1,104 @@
+
+
+.destinationCardName {
+  position: absolute;
+  height: 115px;
+  top: 8vh;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 115px;
+  color: #ffffff;
+  width: fit-content;
+}
+
+.destinationCardText {
+  position: absolute;
+  top: 250px;
+  height: fit-content;
+  width: 400px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  text-align: justify;
+}
+
+.destinationCardLine {
+  background-color: grey;
+  width: 27vw;
+  height: 1px;
+  position: absolute;
+  top: 420px;
+}
+
+.destinationCardDist {
+  width: 200px;
+  height: fit-content;
+  position: absolute;
+  top: 420px;
+  padding-top: 30px;
+}
+
+.destinationCardTime {
+  width: 200px;
+  height: fit-content;
+  position: absolute;
+  top: 420px;
+  left: 200px;
+  padding-top: 30px;
+}
+
+.destinationCardTime h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+  padding-bottom: 20px;
+}
+
+.destinationCardDist h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+  padding-bottom: 20px;
+}
+
+.destinationCardDist p {
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.destinationCardTime p {
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.destinationCardImage {
+  position:absolute;
+  height: 400px;
+  width: 400px;
+  right: 45vw;
+}

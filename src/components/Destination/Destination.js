@@ -1,12 +1,41 @@
-import React from 'react'
-import './Destination.css'
+import React from "react";
+import "./Destination.css";
+import { NavLink, Outlet } from "react-router-dom";
+import DestinationCard from "./DestinationCard/DestinationCard";
 
 const Destination = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <>
+      <div className="destinationText">
+        <ul>
+          <li>Pick your destination</li>
+        </ul>
+      </div>
+      <div className="destinationImage"></div>
+      <div className="destinationNav">
+        <ul className="destinationLinks">
+          <NavLink to='/destination/moon'
+          className={({isActive})=> (isActive ? 'navLinks-active' : "")}>
+            <li>Moon</li>
+          </NavLink>
+          <NavLink to='/destination/mars'
+          className={({isActive})=> (isActive ? 'navLinks-active' : "")}>
+            <li>Mars</li>
+          </NavLink>
+          <NavLink to='/destination/europa'
+          className={({isActive})=> (isActive ? 'navLinks-active' : "")}>
+            <li>Europa</li>
+          </NavLink>
+          <NavLink to='/destination/titan'
+          className={({isActive})=> (isActive ? 'navLinks-active' : "")}>
+            <li>Titan</li>
+          </NavLink>
+        <Outlet/>
+        </ul>
+      </div>
+      <div className="destinationContent"></div>
+    </>
+  );
+};
 
-export default Destination
+export default Destination;
