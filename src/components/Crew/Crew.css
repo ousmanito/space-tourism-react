@@ -1,0 +1,32 @@
+.crewMeet {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+}
+
+
+.dots {
+  position: absolute;
+  bottom: 100px;
+  left: 250px;
+  border: solid white;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.dots a {
+  background-color: grey;
+  margin: 20px;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+
+.dots a:hover {
+  background-color: white;
+}

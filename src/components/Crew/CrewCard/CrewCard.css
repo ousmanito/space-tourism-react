@@ -1,0 +1,52 @@
+.crewTitle {
+      position: absolute;
+      width: fit-content;
+      height: 37px;
+      left: 165.5px;
+      top: 400px;
+      font-family: "Bellefair", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+    .crewName {
+      position: absolute;
+      width: fit-content;
+      height: 64px;
+      left: 165.5px;
+      top: 452px;
+      font-family: "Bellefair", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 64px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    
+    .crewText {
+      position: absolute;
+      width: 444px;
+      height: fit-content;
+      left: 165px;
+      top: 543px;
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 32px;
+      color: #d0d6f9;
+      text-align: justify;
+    }
+    .crewImage {
+      position: absolute;
+      width: fit-content;
+      height: fit-content;
+      right: 10vw;
+      bottom: 0;
+    }
