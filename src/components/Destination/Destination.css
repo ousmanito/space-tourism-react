@@ -31,20 +31,16 @@
   color: grey;
 }
 
-
 .destinationLinks {
   list-style: none;
   position: absolute;
   height: 50px;
-  top: 40%;
+  top: 30%;
   left: 60%;
   bottom: 50%;
   width: fit-content;
-  color: white;
-  font-family: "Barlow Condensed", sans-serif;
   display: flex;
 }
-
 
 .destinationLinks li {
   width: 80px;
@@ -56,7 +52,8 @@
 .destinationLinks a {
   align-items: center;
   display: flex;
-  color: white;
+  color: rgba(208, 214, 249, 1);
+  font-family: "Barlow Condensed", sans-serif;
   cursor: pointer;
   text-transform: uppercase;
   font-style: normal;
@@ -65,8 +62,8 @@
   line-height: 19px;
   letter-spacing: 2.5px;
   justify-content: center;
-
   box-sizing: border-box;
+  margin: 0 10px;
 }
 
 .destinationLinks a:hover {
@@ -76,4 +73,3 @@
 .destinationLinks-active {
   border-bottom: solid 1px white;
 }
-

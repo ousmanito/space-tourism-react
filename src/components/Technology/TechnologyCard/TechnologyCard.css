@@ -1,11 +1,11 @@
 .techText {
   position: absolute;
-  top: 50px;
+  top: 100px;
   height: 192px;
   width: 500px;
-  text-align: justify;
-  left: 350px;
+  left: 220px;
   right: 5.53%;
+  text-align: justify;
   font-family: "Barlow";
   font-style: normal;
   font-weight: normal;
@@ -18,8 +18,8 @@
   position: absolute;
   width: 515px;
   height: 527px;
-  right: -80vw;
-  top: -6%;
+  right: -75vw;
+  bottom: -75px;
 }
 .techTerminology {
   position: absolute;
@@ -33,7 +33,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -43,15 +43,16 @@
   color: #d0d6f9;
 }
 
-.techTitle {
+.techTitle  {
   position: absolute;
-  top: -30px;
-  height: fit-content;
+  top: 0px;
+  height: 192px;
   width: max-content;
-  left: 355px;
+  left: 220px;
+  right: 5.53%;
   font-weight: normal;
   line-height: 32px;
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   font-style: normal;
   font-size: 56px;
   line-height: 64px;

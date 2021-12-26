@@ -29,7 +29,7 @@
 
 .destinationCardLine {
   background-color: grey;
-  width: 27vw;
+  width: 400px;
   height: 1px;
   position: absolute;
   top: 420px;
@@ -98,7 +98,8 @@
 
 .destinationCardImage {
   position:absolute;
-  height: 400px;
-  width: 400px;
-  right: 45vw;
+  height: 450px;
+  width: 450px;
+  right: 48vw;
+  top: 150%;
 }

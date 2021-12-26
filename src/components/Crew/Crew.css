@@ -2,9 +2,9 @@
   position: absolute;
   width: fit-content;
   height: fit-content;
-  left: 250px;
+  left: 166.5px;
   top: 212px;
-   display: flex;
+  display: flex;
   flex-direction: row;
   font-family: "Barlow Condensed", sans-serif;
   color: white;
@@ -15,7 +15,6 @@
   letter-spacing: 4.725px;
   text-transform: uppercase;
   list-style: none;
-
 }
 
 .crewMeet::before {
@@ -48,6 +47,5 @@
 }
 
 .dots .dotActive {
-background-color: white;
-
+  background-color: white;
 }

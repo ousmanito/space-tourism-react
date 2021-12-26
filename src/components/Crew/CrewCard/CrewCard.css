@@ -1,52 +1,53 @@
-.crewTitle {
-      position: absolute;
-      width: fit-content;
-      height: 37px;
-      left: 250px;
-      top: 400px;
-      font-family: "Bellefair",serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 28px;
-      line-height: 37px;
-      text-transform: uppercase;
-      color: #ffffff;
-      mix-blend-mode: normal;
-      opacity: 0.5;
-    }
-    .crewName {
-      position: absolute;
-      width: fit-content;
-      height: fit-content;
-      left: 250px;
-      top: 452px;
-      font-family: "Bellefair", serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 40px;
-      line-height: 64px;
-      text-transform: uppercase;
-      color: #ffffff;
-    }
-    
-    .crewText {
-      position: absolute;
-      width: 444px;
-      height: fit-content;
-      left: 250px;
-      top: 543px;
-      font-family: 'Barlow';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 32px;
-      color: #d0d6f9;
-      text-align: justify;
-    }
-    .crewImage {
-      position: absolute;
-      width: fit-content;
-      height: fit-content;
-      right: 10vw;
-      bottom: 0;
-    }
+.crewTitle h4 {
+  position: absolute;
+  width: max-content;
+  height: 37px;
+  left: 165.5px;
+  top: 400px;
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.crewName h3 {
+  position: absolute;
+  width: max-content;
+  height: 64px;
+  left: 165.5px;
+  top: 452px;
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.crewText {
+  position: absolute;
+  width: 444px;
+  height: 160px;
+  left: 165px;
+  top: 543px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  text-align: justify;
+}
+.crewImage {
+  position: absolute;
+  width: 554.39px;
+  height: 681px;
+  right: 300px;
+  top: 246px;
+  
+}

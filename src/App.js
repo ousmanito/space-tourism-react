@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Nav from "./components/Nav/Nav";

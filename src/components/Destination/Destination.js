@@ -33,7 +33,6 @@ const Destination = () => {
         <Outlet/>
         </ul>
       </div>
-      <div className="destinationContent"></div>
     </>
   );
 };
