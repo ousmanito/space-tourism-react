@@ -127,13 +127,13 @@ const CrewCard = () => {
   return (
     <div>
       <div className="crewTitle">
-        <h1>{data.crew[slog].role}</h1>
+        <h4>{data.crew[slog].role}</h4>
       </div>
       <div className="crewName">
-        <h1>{data.crew[slog].name}</h1>
+        <h3>{data.crew[slog].name}</h3>
       </div>
       <div className="crewText">
-        <h1>{data.crew[slog].bio}</h1>
+        <p>{data.crew[slog].bio}</p>
       </div>
       <div className="crewImage">
         <img src={require(`${data.crew[slog].images.png}`)} alt=""></img>

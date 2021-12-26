@@ -1,32 +1,53 @@
 .crewMeet {
-    height: fit-content;
-    width: fit-content;
-    position: absolute;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 250px;
+  top: 212px;
+   display: flex;
+  flex-direction: row;
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  list-style: none;
+
 }
 
+.crewMeet::before {
+  content: "02";
+  font-weight: bold;
+  padding-right: 10px;
+  color: grey;
+}
 
 .dots {
-  position: absolute;
-  bottom: 100px;
   left: 250px;
-  border: solid white;
+  top: 750px;
+  position: absolute;
   height: fit-content;
   width: fit-content;
   display: flex;
   flex-direction: row;
 }
 
-
-
 .dots a {
   background-color: grey;
-  margin: 20px;
+  margin: 10px;
   border-radius: 50%;
   height: 10px;
   width: 10px;
 }
 
-
 .dots a:hover {
   background-color: white;
+}
+
+.dots .dotActive {
+background-color: white;
+
 }
