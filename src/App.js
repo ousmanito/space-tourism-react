@@ -8,6 +8,8 @@ import Destination from "./components/Destination/Destination";
 import DestinationCard from "./components/Destination/DestinationCard/DestinationCard";
 import Crew from "./components/Crew/Crew";
 import CrewCard from "./components/Crew/CrewCard/CrewCard";
+import Technology from "./components/Technology/Technology";
+import TechnologyCard from './components/Technology/TechnologyCard/TechnologyCard'
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,6 +31,9 @@ function App() {
           </Route>
           <Route path='/crew' element={<Crew/>}>
             <Route path=':slog' element={<CrewCard/>}/>
+          </Route>
+          <Route path='/technology' element={<Technology/>}>
+            <Route path=':slag' element={<TechnologyCard/>}/>
           </Route>
         </Routes>
       </Router>

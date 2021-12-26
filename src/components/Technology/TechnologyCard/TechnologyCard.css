@@ -1,0 +1,60 @@
+.techText {
+  position: absolute;
+  top: 50px;
+  height: 192px;
+  width: 500px;
+  text-align: justify;
+  left: 350px;
+  right: 5.53%;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+.techImage {
+  position: absolute;
+  width: 515px;
+  height: 527px;
+  right: -80vw;
+  top: -6%;
+}
+.techTerminology {
+  position: absolute;
+  top: -50px;
+  height: 192px;
+  width: 500px;
+  left: 220px;
+  right: 5.53%;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}
+
+.techTitle {
+  position: absolute;
+  top: -30px;
+  height: fit-content;
+  width: max-content;
+  left: 355px;
+  font-weight: normal;
+  line-height: 32px;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+  text-transform: uppercase;
+}

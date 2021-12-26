@@ -1,11 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./Technology.css";
 
 const Technology = () => {
   return (
     <div>
-        <div className="techText"></div>
+        <div className="techLaunch"><p>Space Launch 101</p></div>
       <div className="numbers">
         <NavLink
           to={"/technology/0"}
@@ -25,6 +25,7 @@ const Technology = () => {
         >
           <span><p>3</p></span>
         </NavLink>
+        <Outlet/>
       </div>
 
     </div>

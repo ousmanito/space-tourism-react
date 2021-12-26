@@ -1,9 +1,77 @@
 .numbers {
-    position: absolute;
-width: 80px;
-height: 80px;
-left: 165px;
-top: 495px;
-border: solid white;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 165px;
+  top: 375px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+}
 
+.numbers p {
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Bellefair";
+  font-style: normal;
+  border: solid grey;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.numbers p:hover {
+  background-color: white;
+  color: black;
+}
+.numbers span {
+  display: flex;
+  justify-content: center;
+}
+.numbersActive p {
+  background-color: white;
+  color: black;
+}
+
+.techLaunch {
+  position: absolute;
+  top: 250px;
+  height: 34px;
+  left: 300px;
+  right: 2.3%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  font-family:'Barlow Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+}
+
+.techLaunch::before {
+  display: flex;
+  flex-direction: row;
+  content: "03";
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  padding-right: 20px;
 }
