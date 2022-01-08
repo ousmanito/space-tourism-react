@@ -1,6 +1,6 @@
 .techText {
   position: absolute;
-  top: 100px;
+  top: 165px;
   height: 192px;
   width: 500px;
   left: 220px;
@@ -23,7 +23,7 @@
 }
 .techTerminology {
   position: absolute;
-  top: -50px;
+  top: 45px;
   height: 192px;
   width: 500px;
   left: 220px;
@@ -45,7 +45,7 @@
 
 .techTitle  {
   position: absolute;
-  top: 0px;
+  top: 85px;
   height: 192px;
   width: max-content;
   left: 220px;

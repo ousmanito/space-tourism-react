@@ -2,11 +2,11 @@
   position: absolute;
   width: 95%;
   height: 96px;
-  left: 55px;
+  left: 2.50rem;
   top: 40px;
   display: flex;
   flex-direction: row;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .Nav a {
   width: fit-content;
@@ -25,7 +25,6 @@
   opacity: 0.25;
   z-index: 2;
 }
-
 .navBar {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
@@ -45,7 +44,6 @@
   counter-reset: navList;
 }
 
-
 .navLinks li a {
   display: flex;
   align-items: center;
@@ -55,16 +53,13 @@
   text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   letter-spacing: 2.7px;
   box-sizing: border-box;
   counter-increment: navList;
   text-decoration: none;
-
 }
-
-
 
 .navLinks li {
   display: flex;
@@ -74,19 +69,38 @@
 }
 
 .navLinks a::before {
-  content:"0" counter(navList) "";
+  content: "0" counter(navList) "";
   font-weight: bold;
   padding-right: 10px;
 }
-
 
 .navLinks li:hover {
   border-bottom: 3px solid rgba(245, 245, 245, 0.678);
 }
 .navLinks-active {
   border-bottom: 3px solid white;
-
+}
+.navBurger {
+  display: none;
 }
 
-
-
+@media all and (max-width: 1375px) {
+  .navLine {
+    display: none;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .navBar {
+    display: none;
+  }
+  .navBurger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    max-width: 3.5vw;
+    min-width: 30px;
+    height: auto;
+    padding: 20px;
+  }
+}

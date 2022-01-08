@@ -1,11 +1,10 @@
 import React from "react";
 import "./Destination.css";
 import { NavLink, Outlet } from "react-router-dom";
-import DestinationCard from "./DestinationCard/DestinationCard";
 
 const Destination = () => {
   return (
-    <>
+    <div className="destination">
       <div className="destinationText">
         <ul>
           <li>Pick your destination</li>
@@ -33,7 +32,7 @@ const Destination = () => {
         <Outlet/>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

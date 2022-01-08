@@ -10,7 +10,7 @@
   color: white;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
+  font-size: min(1.75rem, 3vw);
   line-height: 34px;
   letter-spacing: 4.725px;
   text-transform: uppercase;
