@@ -7,7 +7,7 @@
   font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: max(1.75vw,35px);
   line-height: 37px;
   text-transform: uppercase;
   color: #ffffff;
@@ -23,7 +23,7 @@
   font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 56px;
+  font-size: max(3vw,52px);
   line-height: 64px;
   text-transform: uppercase;
   color: #ffffff;
@@ -31,7 +31,7 @@
 
 .crewText {
   position: absolute;
-  width: 444px;
+  width:35vw;
   height: 160px;
   left: 165px;
   top: 543px;
@@ -45,9 +45,33 @@
 }
 .crewImage {
   position: absolute;
-  width: 554.39px;
-  height: 681px;
-  right: 300px;
-  top: 246px;
+  width: 510px;
+  height: 510px;
+  right: 19rem;
+  top: 29rem;
   
+}
+@media screen and (max-width:1480px) {
+  .crewImage{
+    height: 400px;
+    width: 400px;
+    top: 36rem;
+    left: 40%;
+  }
+  .crewName h3,.crewTitle h4,.crewText {
+    margin-top: -120px;
+    left: 20%;
+  }
+  .crewText {
+    width: 80vw;
+    left: 15%;
+    text-align: center;
+  }
+}
+@media screen and (max-width:800px) {
+  .crewImage{
+left: 30%;
+height: 375px;
+width: 375px;
+  }
 }
