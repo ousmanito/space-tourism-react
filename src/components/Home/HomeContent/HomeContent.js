@@ -16,7 +16,7 @@ const HoverOuter = () => {
 
 const HomeContent = () => {
   return (
-    <div>
+    <div className='Home'>
       <div className="homeContent">
         <div className="HomeText">
           <h5>So, You Want To Travel To</h5>

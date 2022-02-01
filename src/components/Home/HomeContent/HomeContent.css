@@ -7,8 +7,6 @@
   font-size: 1rem;
 }
 
-
-
 .HomeText {
   position: absolute;
   max-width: 80%;
@@ -28,7 +26,7 @@
   font-style: normal;
   text-transform: uppercase;
   font-weight: normal;
-  font-size: min(3vw,1.75rem);
+  font-size: min(3vw, 1.75rem);
   line-height: 34px;
   letter-spacing: 4.725px;
   color: #d0d6f9;
@@ -49,7 +47,7 @@
   left: 0.11%;
   right: 1.22%;
   top: calc(50% - 128px / 2 + 127px);
-  font-family: 'Barlow', serif;
+  font-family: "Barlow", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.125rem;
@@ -69,7 +67,6 @@
   right: 20%;
   top: 50%;
 }
-
 
 .HomeButton p {
   font-family: "Bellefair";
@@ -108,32 +105,41 @@
   transition: 1s ease-in-out;
 }
 
-@media  all and (max-width:1375px) {
+@media all and (max-width: 1275px) {
+  .HomeButton,
+  .HomeText {
+    position: static;
+  }
 
-.HomeText {
-  top: 30%;
-  left: 26%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .HomeText h5 {
+    display: flex;
+    height: min-content;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 15rem;
+    z-index: 1;
+  }
+  .HomeText h1 {
+    display: flex;
+    height: min-content;
+    width: 100vw;
+    justify-content: center;
+    z-index: 1;
+  }
+  .HomeText p {
+    display: flex;
+    height: min-content;
+    width: 70vw;
+    padding: 0;
+    margin: -6.5rem auto;
+    text-align: center;
+  }
 
-.HomeButton {
-  left:42.5%;
-  top: 70%;
-}
-
-.HomeText h1 {
-  font-size: min(15vw,9.725rem);
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.HomeText p {
-  text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  padding: 0;
-}
+  .HomeP {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin-top: -22rem;
+    margin-left:40%;
+  }
 }

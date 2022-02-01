@@ -1,5 +1,6 @@
 * {
   text-decoration: none;
+  overflow: visible;
 }
 
 .destinationText {
@@ -16,7 +17,7 @@
 .destinationText li {
   font-style: normal;
   font-weight: normal;
-  font-size: min(1.75rem, 3vw);
+  font-size: max(17px,2vw);
   line-height: 34px;
   letter-spacing: 4.725px;
   text-transform: uppercase;
@@ -74,9 +75,22 @@
   border-bottom: solid 1px white;
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1180px) {
   .destinationLinks {
-    left: 30%;
     top: 50%;
+    left: 18%;
+    transition: 0.5s ease;
+  }
+  .destinationLinks a {
+    margin-top: 50px;
+  }
+  .destinationText {
+    left: 2%;
+  }
+}
+@media  screen and (max-width:660px) {
+  .destinationLinks {
+    top: 45%;
+   
   }
 }

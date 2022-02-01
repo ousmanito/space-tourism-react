@@ -5,7 +5,6 @@ import "./image-titan.png";
 import "./image-mars.png";
 import "./image-moon.png";
 import "./image-europa.png";
-import { useEffect } from "react/cjs/react.development";
 
 const data = {
   destinations: [
@@ -129,7 +128,7 @@ const DestinationCard = () => {
   let slug = useParams().slug;
   const indexDest = nameArr.indexOf(slug);
   return (
-    <>
+    <div className="destinationCard">
       <div className="destinationCardName">{slug.toUpperCase()}</div>
       <div className="destinationCardText">
         <p>{data.destinations[indexDest].description}</p>
@@ -149,7 +148,7 @@ const DestinationCard = () => {
           alt="destinationImage"
         ></img>
       </div>
-    </>
+    </div>
   );
 };
 
