@@ -10,7 +10,7 @@
   color: white;
   font-style: normal;
   font-weight: normal;
-  font-size: min(1.75rem, 3vw);
+  font-size: max(1.75vw,17px);
   line-height: 34px;
   letter-spacing: 4.725px;
   text-transform: uppercase;
@@ -58,4 +58,10 @@
 .crewMeet {
   left: 2%;
 }
+}
+@media screen and (max-width:800px) {
+  .dots {
+    left: 40%;
+    margin-top: -85px;
+  }
 }

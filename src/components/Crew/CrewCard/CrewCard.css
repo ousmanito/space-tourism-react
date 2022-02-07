@@ -7,7 +7,7 @@
   font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: max(1.75vw,35px);
+  font-size: max(2.2vw,27px);
   line-height: 37px;
   text-transform: uppercase;
   color: #ffffff;
@@ -23,7 +23,7 @@
   font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: max(3vw,52px);
+  font-size: max(3.5vw,32px);
   line-height: 64px;
   text-transform: uppercase;
   color: #ffffff;
@@ -70,8 +70,11 @@
 }
 @media screen and (max-width:800px) {
   .crewImage{
-left: 30%;
+left: 20%;
 height: 375px;
 width: 375px;
+  }
+  .crewName h3,.crewTitle h4, .crewText{
+    left: 10%;
   }
 }
