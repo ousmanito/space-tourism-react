@@ -1,6 +1,6 @@
 .techText {
   position: absolute;
-  top: 165px;
+  top: 150px;
   height: 192px;
   width: 500px;
   left: 220px;
@@ -28,22 +28,18 @@
   width: 500px;
   left: 220px;
   right: 5.53%;
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 2.7px;
   text-transform: uppercase;
+  letter-spacing: 2.7px;
   color: #d0d6f9;
 }
 
-.techTitle  {
+
+.techTitle h4 {
   position: absolute;
   top: 85px;
   height: 192px;
@@ -54,8 +50,42 @@
   line-height: 32px;
   font-family: "Bellefair";
   font-style: normal;
-  font-size: 56px;
+  font-size: max(3.5vw,32px);
   line-height: 64px;
   color: #ffffff;
   text-transform: uppercase;
 }
+
+@media screen and (max-width:1510px) {
+  .techImage {
+    left: 13%;
+    width: 20vw;
+    height: 20vw;
+    top: -130%;
+  }
+  .techImage img {
+    border-radius: 50%;
+  }
+  .techText, .techTitle h4,.techTerminology {
+    margin-top: 150px;
+    left: -7vw;
+  }
+  .techText h5 {
+  width: 100%;
+  left: -80px;
+  text-align: justify;
+  }
+}
+
+@media screen and (max-width:1200px) {
+.techImage {
+  top:-95%;
+  left: 20%;
+}
+}
+@media screen and (max-width:800px) {
+  .techImage {
+    top:-70%;
+    left: 25%;
+  }
+  }
