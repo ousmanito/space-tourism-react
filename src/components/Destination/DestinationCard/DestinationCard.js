@@ -1,6 +1,6 @@
 import React from "react";
 import "./DestinationCard.css";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./image-titan.png";
 import "./image-mars.png";
 import "./image-moon.png";
