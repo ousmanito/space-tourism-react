@@ -17,7 +17,7 @@
 .destinationText li {
   font-style: normal;
   font-weight: normal;
-  font-size: max(17px,2vw);
+  font-size: max(17px,1.75vw);
   line-height: 34px;
   letter-spacing: 4.725px;
   text-transform: uppercase;
