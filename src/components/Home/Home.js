@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import "./Home.css";
 
 
