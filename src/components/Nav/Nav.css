@@ -94,12 +94,12 @@
   position: absolute;
   right: 0;
   top: -50%;
-  height: 91vh;
+  height: 90vh;
   width: 50vw;
   display: flex;
   flex-direction: column;
   transition: ease 0.2s;
-  z-index: 6;
+  z-index: 10;
   overflow: hidden;
   padding-top: 10%;
   backdrop-filter: blur(8px);
@@ -112,7 +112,7 @@
   justify-content:center;
   align-content: center;
   padding-top: 8vh;
-  z-index: 100;
+  z-index: 6;
 }
 
 .navMenu a {
@@ -131,7 +131,7 @@
   min-width: 30px;
   height: auto;
   padding: 20px;
-  z-index: 7;
+  z-index: 12;
   cursor: pointer;
   display: none;
 }

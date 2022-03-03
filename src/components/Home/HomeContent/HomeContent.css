@@ -1,24 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
   overflow: visible;
   font-size: 1rem;
 }
 
+.Home{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
 .HomeText {
-  position: absolute;
-  max-width: 80%;
-  left: 12%;
-  top: 45%;
-  width: 50%;
-  height: fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: justify;
+  display: grid;
+  justify-items: center;
+  grid-column: 1;
+  height: max-content;
+  z-index: 10;
+  width: 75%;
+
 }
 
 .HomeText h5 {
@@ -30,7 +30,6 @@
   line-height: 34px;
   letter-spacing: 4.725px;
   color: #d0d6f9;
-  width: 100%;
 }
 
 .HomeText h1 {
@@ -39,14 +38,9 @@
   font-weight: normal;
   font-size: 9.275rem;
   color: #ffffff;
-  width: fit-content;
 }
 
 .HomeText p {
-  position: absolute;
-  left: 0.11%;
-  right: 1.22%;
-  top: calc(50% - 128px / 2 + 127px);
   font-family: "Barlow", serif;
   font-style: normal;
   font-weight: normal;
@@ -54,18 +48,13 @@
   line-height: 2rem;
   color: #d0d6f9;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 3rem;
 }
 
 .HomeButton {
-  position: absolute;
-  max-width: 15vw;
-  max-height: 15vw;
-  min-height: 180px;
-  min-width: 180px;
-
-  right: 20%;
-  top: 50%;
+  height: 180px;
+  width: 180px;
+  grid-column: 2;
+  z-index: 2;
 }
 
 .HomeButton p {
@@ -81,66 +70,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 6;
   cursor: pointer;
 }
 
-.ButtonHover {
-  height: auto;
-  min-width: 250px;
-  background-color: grey;
-  opacity: 50%;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  transform: translate(-15%, -15%);
-  transition: 0.3s ease;
-  z-index: 4;
-  opacity: 0;
-}
-
-.ButtonHover:hover {
-  opacity: 50%;
-  transition: 1s ease-in-out;
-}
-
-@media all and (max-width: 1275px) {
-  .HomeButton,
-  .HomeText {
-    position: static;
-  }
-
-  .HomeText h5 {
-    display: flex;
-    height: min-content;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 15rem;
-    z-index: 1;
-  }
-  .HomeText h1 {
-    display: flex;
-    height: min-content;
-    width: 100vw;
-    justify-content: center;
-    z-index: 1;
-  }
-  .HomeText p {
-    display: flex;
-    height: min-content;
-    width: 70vw;
-    padding: 0;
-    margin: -6.5rem auto;
-    text-align: center;
-  }
-
-  .HomeP {
-    display: block;
-    width: 180px;
-    height: 180px;
-    margin-top: -22rem;
-    margin-left:40%;
-    z-index: 0;
-  }
-}
