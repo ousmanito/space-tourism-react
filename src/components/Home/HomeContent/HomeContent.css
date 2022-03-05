@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: visible;
+  overflow: hidden;
   font-size: 1rem;
 }
 
@@ -16,7 +16,7 @@
   justify-items: center;
   grid-column: 1;
   height: max-content;
-  z-index: 10;
+  z-index: 1;
   width: 75%;
 
 }
@@ -73,3 +73,23 @@
   cursor: pointer;
 }
 
+@media screen and (max-width:900px) {
+  .Home {
+    grid-template-columns: 1fr;
+  }
+  .HomeText {
+    margin-top: 25%;
+  }
+  .HomeButton {
+    margin-bottom: 25%;
+  }
+  .HomeText, .HomeButton {
+    grid-column: 1;
+  }
+  .HomeText h1 {
+    font-size: 6rem;
+  }
+  .HomeText h1,h5,p {
+    text-align: center;
+  }
+}

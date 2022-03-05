@@ -4,11 +4,8 @@
 }
 
 .destinationText {
-  position: absolute;
   width: fit-content;
   height: fit-content;
-  left: 166.5px;
-  top: 212px;
   display: flex;
   flex-direction: row;
   font-family: "Barlow Condensed", sans-serif;
@@ -17,7 +14,7 @@
 .destinationText li {
   font-style: normal;
   font-weight: normal;
-  font-size: max(17px,1.75vw);
+  font-size: max(17px, 1.75vw);
   line-height: 34px;
   letter-spacing: 4.725px;
   text-transform: uppercase;
@@ -33,22 +30,29 @@
 }
 
 .destinationLinks {
-  list-style: none;
+  height: fit-content;
+  width: 15%;
   position: absolute;
-  height: 50px;
   top: 30%;
-  left: 60%;
-  bottom: 50%;
-  width: fit-content;
-  display: flex;
+  left: 0%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+  
+  
 }
 
 .destinationLinks li {
   width: 80px;
-  align-items: center;
-  justify-content: center;
+  height: fit-content;
+  list-style: none;
   display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  z-index: 5;
 }
+
+
 
 .destinationLinks a {
   align-items: center;
@@ -73,23 +77,4 @@
 
 .destinationLinks-active {
   border-bottom: solid 1px white;
-}
-
-@media screen and (max-width:1180px) {
-  .destinationLinks {
-    top: 50%;
-    left: 18%;
-    transition: 0.5s ease;
-  }
-  .destinationLinks a {
-    margin-top: 50px;
-  }
-  .destinationText {
-    left: 2%;
-  }
-}
-@media  screen and (max-width:660px) {
-  .destinationLinks {
-    top: 45%;
-  }
 }
