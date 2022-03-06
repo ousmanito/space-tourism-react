@@ -125,7 +125,7 @@ const CrewCard = () => {
   let slog = useParams().slog;
   console.log({ slog });
   return (
-    <div>
+    <div className="crewCard">
       <div className="crewTitle">
         <h4>{data.crew[slog].role}</h4>
       </div>
