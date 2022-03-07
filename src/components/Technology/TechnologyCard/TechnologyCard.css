@@ -1,10 +1,20 @@
-.techText {
-  position: absolute;
-  top: 150px;
-  height: 192px;
-  width: 500px;
-  left: 220px;
-  right: 5.53%;
+.techCard {
+  position: fixed;
+  display: grid;
+  bottom: 0;
+  grid-template-columns: 1fr 2.5fr 3fr;
+  grid-template-rows: 50px 50px 75px 1fr;
+  height: 60%;
+  width: 100%;
+}
+
+.techText,
+.techTitle,
+.techTerminology {
+  grid-column: 2;
+}
+
+.techText h5 {
   text-align: justify;
   font-family: "Barlow";
   font-style: normal;
@@ -13,22 +23,20 @@
   line-height: 32px;
   color: #d0d6f9;
 }
+.techText {
+  grid-row: 4/5;
+}
 
 .techImage {
-  position: absolute;
-  width: 515px;
-  height: 527px;
-  right: -75vw;
-  bottom: -75px;
+  grid-column: 3;
+  grid-row: 1/4;
+  height: fit-content;
+  width: 60%;
+  align-self: start;
+  justify-self: center;
 }
 .techTerminology {
-  position: absolute;
-  top: 45px;
-  height: 192px;
-  width: 500px;
-  left: 220px;
-  right: 5.53%;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -36,56 +44,52 @@
   text-transform: uppercase;
   letter-spacing: 2.7px;
   color: #d0d6f9;
+  grid-row: 2/3;
 }
 
-
 .techTitle h4 {
-  position: absolute;
-  top: 85px;
-  height: 192px;
-  width: max-content;
-  left: 220px;
-  right: 5.53%;
   font-weight: normal;
   line-height: 32px;
   font-family: "Bellefair";
   font-style: normal;
-  font-size: max(3.5vw,32px);
+  font-size: max(3.5vw, 32px);
   line-height: 64px;
   color: #ffffff;
   text-transform: uppercase;
 }
+.techTitle {
+  grid-row: 3/4;
+}
+@media screen and (max-width: 1100px) {
+  .techCard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 370px 50px 50px auto;
+    height: 75%;
+    width: 100%;
+    left: 0;
+  }
 
-@media screen and (max-width:1510px) {
   .techImage {
-    left: 13%;
-    width: 20vw;
-    height: 20vw;
-    top: -130%;
+    grid-column: 1/3;
+    height: 220px;
+    width: 100%;
   }
-  .techImage img {
-    border-radius: 50%;
-  }
-  .techText, .techTitle h4,.techTerminology {
-    margin-top: 150px;
-    left: -7vw;
+  .techTitle h4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
   .techText h5 {
-  width: 100%;
-  left: -80px;
-  text-align: justify;
+    text-align: center;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+  }
+  .techTerminology h5 {
+    display: flex;
+    justify-content: center;
   }
 }
-
-@media screen and (max-width:1200px) {
-.techImage {
-  top:-95%;
-  left: 20%;
-}
-}
-@media screen and (max-width:800px) {
-  .techImage {
-    top:-70%;
-    left: 25%;
-  }
-  }

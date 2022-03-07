@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./TechnologyCard.css";
 import "./image-launch-vehicle-portrait.jpg";
 import "./image-space-capsule-portrait.jpg";
 import "./image-spaceport-portrait.jpg";
+import "./image-launch-vehicle-landscape.jpg";
+import "./image-space-capsule-landscape.jpg";
+import "./image-spaceport-landscape.jpg";
 
 const TechnologyCard = () => {
   const slag = useParams().slag;
-  console.log(slag);
   const data = {
     destinations: [
       {
@@ -123,10 +125,11 @@ const TechnologyCard = () => {
       },
     ],
   };
+
   return (
-    <div>
-      <div>
-        <h5 className="techTerminology">The Terminology...</h5>
+    <div className="techCard">
+      <div className="techTerminology">
+        <h5>The Terminology...</h5>
       </div>
       <div className="techTitle">
         <h4>{data.technology[slag].name}</h4>
@@ -135,10 +138,13 @@ const TechnologyCard = () => {
         <h5>{data.technology[slag].description}</h5>
       </div>
       <div className="techImage">
-        <img
-          src={require(`${data.technology[slag].images.portrait}`)}
-          alt=""
-        ></img>
+        <picture>
+          <source srcSet={`
+          ${require(`${data.technology[slag].images.landscape}`)},
+          
+          `} media="(max-width: 1100px)" />
+          <img src={require(`${data.technology[slag].images.portrait}`)} />
+        </picture>
       </div>
     </div>
   );
