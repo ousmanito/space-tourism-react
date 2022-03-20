@@ -3,7 +3,6 @@ import "./App.css";
 import Home from "./components/Home/Home";
 import Nav from "./components/Nav/Nav";
 import HomeContent from "./components/Home/HomeContent/HomeContent";
-import Destination from "./components/Destination/Destination";
 import DestinationCard from "./components/Destination/DestinationCard/DestinationCard";
 import Crew from "./components/Crew/Crew";
 import CrewCard from "./components/Crew/CrewCard/CrewCard";
@@ -24,9 +23,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<HomeContent />} />
-          <Route path="/destination" element={<Destination />}>
-            <Route path=":slug" element={<DestinationCard/>}/>
-          </Route>
+          <Route path="/destination/:slug" element={<DestinationCard/>}/>
           <Route path='/crew' element={<Crew/>}>
             <Route path=':slog' element={<CrewCard/>}/>
           </Route>

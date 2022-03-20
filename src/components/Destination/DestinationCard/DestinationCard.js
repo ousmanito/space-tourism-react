@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink, Outlet } from "react-router-dom";
 import "./DestinationCard.css";
 import { useParams } from "react-router-dom";
 import "./image-titan.png";
@@ -125,10 +126,40 @@ const data = {
 const nameArr = ["moon", "mars", "europa", "titan"];
 
 const DestinationCard = () => {
-  let slug = useParams().slug;
+  let {slug} = useParams();
   const indexDest = nameArr.indexOf(slug);
   return (
     <div className="destinationCard">
+      <div className="destinationList-container">
+        <ul>
+        <NavLink
+              to="/destination/moon"
+              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
+            >
+              <li>Moon</li>
+            </NavLink>
+            <NavLink
+              to="/destination/mars"
+              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
+            >
+              <li>Mars</li>
+            </NavLink>
+            <NavLink
+              to="/destination/europa"
+              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
+            >
+              <li>Europa</li>
+            </NavLink>
+            <NavLink
+              to="/destination/titan"
+              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
+            >
+              <li>Titan</li>
+            </NavLink>
+            <Outlet />
+        </ul>
+      </div>
+
       <div className="destinationCardName">{slug.toUpperCase()}</div>
       <div className="destinationCardText">
         <p>{data.destinations[indexDest].description}</p>
