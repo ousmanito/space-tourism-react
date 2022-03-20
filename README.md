@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://dreamy-wescoff-a54d7f.netlify.app/
+- Solution URL: https://space-challenge-react.netlify.app/
 ## My process
 
 ### Built with
