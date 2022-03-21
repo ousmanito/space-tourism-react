@@ -13,7 +13,6 @@ const menuCheck = ()=> {
     document.querySelector('.navMenu').style.display = 'none'
     document.querySelector('.navBurger').style.opacity = 1
     document.querySelector('.navClose').style.display = 'none'
-
   }
 }
 
@@ -73,7 +72,6 @@ const Nav = () => {
           <li id="home">
             <NavLink
               to={"/"}
-              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
             >
               Home
             </NavLink>
@@ -81,7 +79,6 @@ const Nav = () => {
           <li id="destination">
             <NavLink
               to={"/destination/moon"}
-              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
             >
               Destination
             </NavLink>
@@ -89,7 +86,6 @@ const Nav = () => {
           <li id="crew">
             <NavLink
               to={"/crew/0"}
-              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
             >
               Crew
             </NavLink>
@@ -97,7 +93,6 @@ const Nav = () => {
           <li id="technology">
             <NavLink
               to={"/technology/0"}
-              className={({ isActive }) => (isActive ? "navLinks-active" : "")}
             >
               Technology
             </NavLink>

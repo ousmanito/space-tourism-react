@@ -81,6 +81,12 @@
 .navLinks-active {
   border-bottom: 3px solid white;
 }
+
+.navLinks-active li {
+  color: #ffffff;
+  border-bottom: 3px solid white;
+}
+
 .navBurger {
   display: none;
   cursor: pointer;
@@ -92,10 +98,9 @@
 }
 .navMenu {
   display: block;
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: -50%;
-  height: 90vh;
+  top: 0;
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -105,15 +110,15 @@
   padding-top: 10%;
   backdrop-filter: blur(8px);
   display: none;
-  
+  grid-row: 1/8;
 }
+
 .navMenu li {
   display: flex;
   height: fit-content;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
   padding-top: 8vh;
-  z-index: 6;
 }
 
 .navMenu a {
