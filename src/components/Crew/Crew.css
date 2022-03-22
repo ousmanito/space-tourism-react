@@ -2,7 +2,7 @@
   position: absolute;
   width: fit-content;
   height: fit-content;
-  left: 166.5px;
+  left: 121px;
   top: 212px;
   display: flex;
   flex-direction: row;
@@ -60,5 +60,11 @@
     left: 42.5%;
     bottom: 35%;
   }
-  
+}
+
+@media screen and (max-width:550px) {
+  .dots {
+    left: 38.5%;
+    bottom: 29%;
+  }
 }

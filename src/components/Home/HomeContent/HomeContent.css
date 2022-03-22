@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-size: 1rem;
 }
 
 .Home{
@@ -17,7 +16,8 @@
   grid-column: 1;
   height: max-content;
   z-index: 1;
-  width: 75%;
+  width: 100%;
+  margin-left: 30%;
 
 }
 
@@ -38,21 +38,24 @@
   font-weight: normal;
   font-size: 9.275rem;
   color: #ffffff;
+  width: 100%;
 }
 
 .HomeText p {
   font-family: "Barlow", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1.250rem;
   line-height: 2rem;
   color: #d0d6f9;
+  width: 75%;
+  margin-right: 25%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .HomeButton {
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   grid-column: 2;
   z-index: 2;
 }
@@ -73,21 +76,36 @@
   cursor: pointer;
 }
 
+.HomeButton p:hover {
+  background-color: rgb(230, 230, 230);
+  transition: 0.4s ease-in-out;
+
+}
+
 @media screen and (max-width:900px) {
   .Home {
     grid-template-columns: 1fr;
   }
   .HomeText {
     margin-top: 25%;
+    margin-left: 0;
+  }
+  .HomeText p {
+    margin: 0;
   }
   .HomeButton {
     margin-bottom: 25%;
+    height: 200px;
+    width: 200px;
   }
   .HomeText, .HomeButton {
     grid-column: 1;
   }
   .HomeText h1 {
     font-size: 6rem;
+  }
+  .HomeText p {
+    width: 85%;
   }
   .HomeText h1,h5,p {
     text-align: center;

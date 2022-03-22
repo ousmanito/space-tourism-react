@@ -35,6 +35,7 @@
   align-self: start;
   justify-self: center;
 }
+
 .techTerminology {
   font-family: "Barlow Condensed";
   font-style: normal;
@@ -73,7 +74,7 @@
   .techImage {
     grid-column: 1/3;
     height: 220px;
-    width: 98%;
+    width: 102%;
   }
   .techTitle h4 {
     display: flex;

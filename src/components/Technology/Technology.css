@@ -42,10 +42,10 @@
 }
 
 .techLaunch {
-  position: absolute;
+  position: fixed;
   width: fit-content;
   height: fit-content;
-  left: 166.5px;
+  left: 222px;
   top: 182px;
   display: flex;
   flex-direction: row;

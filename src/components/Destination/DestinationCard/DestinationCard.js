@@ -129,6 +129,12 @@ const DestinationCard = () => {
   let {slug} = useParams();
   const indexDest = nameArr.indexOf(slug);
   return (
+    <>
+    <div className="destinationText">
+        <ul>
+          <li>Pick your destination</li>
+        </ul>
+      </div>
     <div className="destinationCard">
       <div className="destinationList-container">
         <ul>
@@ -180,6 +186,7 @@ const DestinationCard = () => {
         ></img>
       </div>
     </div>
+    </>
   );
 };
 

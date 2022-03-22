@@ -4,6 +4,9 @@
 }
 
 .destinationText {
+  position: fixed;
+  left: 166.5px;
+  top: 182px;
   width: fit-content;
   height: fit-content;
   display: flex;

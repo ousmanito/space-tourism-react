@@ -60,8 +60,8 @@
   grid-column: 2/3;
   align-self: end;
   justify-self: center;
-  width: 32vw;
-  height: 32vw;
+  width: 29.2vw;
+  height: 29.2vw;
 }
 
 @media screen and (max-width:990px) {
@@ -73,6 +73,8 @@
   }
   .crewImage{
     grid-column: 1;
+    height: 270px;
+    width: 270px;
   }
   
 .crewText 
