@@ -1,16 +1,16 @@
-# Frontend Mentor - Space tourism website
+# Frontend Mentor - Space Tourism Website
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Frontend Mentor challenges help improve coding skills by building realistic projects. 
 
 ### Links
 
-- URL: https://space-challenge-react.netlify.app/
+- Project URL: https://space-challenge-react.netlify.app/
 
-## Screenshot of the home page
+## Screenshot of the Home Page
 
 ![space_tourism_challenge-screen](https://user-images.githubusercontent.com/96242923/159391072-5863863f-de37-48c0-bb1d-431813cd41c9.png)
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -20,7 +20,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ## Overview
 
-### The challenge
+### The Challenge
 
 Users should be able to:
 
@@ -30,7 +30,7 @@ Users should be able to:
 
 
 
-## My process
+## My Process
 
 ### Built with
 
